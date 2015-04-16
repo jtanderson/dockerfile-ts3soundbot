@@ -4,6 +4,6 @@ This Dockerfile sets up a web-interface soundbot to connect to a Teamspeak 3 Cli
 
 ## Setup
 
-Clone the Dockerfile: `git clone https://github.com/jtanderson/dockerfile-ts3soundbot.git`.
-Next, build the image: `docker build -t mytsbot dockerfile-ts3soundbot`.
-Finally, run it with a name and port exposure: `docker run -d --name ts3bot -p 8087:8087 mytsbot`
+1. Clone the Dockerfile: `git clone https://github.com/jtanderson/dockerfile-ts3soundbot.git`.
+2. Next, build the image: `docker build -t mytsbot dockerfile-ts3soundbot`.
+3. Finally, run it with a name and port exposure: `docker run -d --name ts3bot -p 8087:8087 mytsbot`
