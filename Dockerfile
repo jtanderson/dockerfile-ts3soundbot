@@ -6,7 +6,7 @@ ENV TSBOT_URL https://frie.se/ts3bot/sinusbot-0.9.8.tar.bz2
 ENV TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.18.1/TeamSpeak3-Client-linux_amd64-3.0.18.1.run
 
 # Download TS3 file and youtube-dl and extract it into /opt.
-ADD https://yt-dl.org/downloads/2015.07.18/youtube-dl /opt/ts3soundboard/
+ADD https://yt-dl.org/downloads/2015.12.05/youtube-dl /opt/ts3soundboard/
 RUN chmod 0755 /opt/ts3soundboard/youtube-dl
 ADD ${TSBOT_URL} /opt/ts3soundboard/
 RUN cd /opt/ts3soundboard && tar -xf /opt/ts3soundboard/sinusbot*.tar.bz2
