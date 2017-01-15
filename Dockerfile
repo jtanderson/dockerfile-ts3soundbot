@@ -2,10 +2,13 @@ FROM ubuntu
 
 #VOLUME ["/tsmusic"]
 
-ENV TSBOT_URL http://frie.se/ts3bot/
-ENV TSBOT_FILE sinusbot-0.9.8.tar.bz2
-ENV TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.18.2/
-ENV TEAMSPEAK_FILE TeamSpeak3-Client-linux_amd64-3.0.18.2.run
+#ENV TSBOT_URL http://frie.se/ts3bot/
+ENV TSBOT_URL https://www.sinusbot.com/dl/
+#ENV TSBOT_FILE sinusbot-0.9.8.tar.bz2
+ENV TSBOT_FILE sinusbot-beta.tar.bz2
+#ENV TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.18.2/
+ENV TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.19.4/
+ENV TEAMSPEAK_FILE TeamSpeak3-Client-linux_amd64-3.0.19.4.run
 
 # Download TS3 file and extract it into /opt.
 ADD ${TSBOT_URL}${TSBOT_FILE} /opt/
